@@ -22,8 +22,13 @@ const bloglist = [
 
 const Bloglist = () => {
     // here, sample details stored in local storage for persisting after first render
-    localStorage.setItem('blogs', JSON.stringify(bloglist))
-
+    const [blogs, setBlogs] = useState(() => {
+        
+        if(JSON.parse(localStorage.getItem('blogs') === null)){
+            localStorage.setItem('blogs', JSON.stringify(bloglist))
+        } 
+        return JSON.parse(localStorage.getItem('blogs'))
+    })
     // here, we use useState for maintaining state for user inputs
 
     const [title, setTitle] = useState('')
@@ -33,7 +38,7 @@ const Bloglist = () => {
     const [isErr, setIsErr] = useState(false)
     const [isVisible, setIsVisible] = useState(false)
     const [errMsg, setErrMsg] = useState('')
-    const [blogs, setBlogs] = useState(JSON.parse(localStorage.getItem('blogs')))
+    
 
     // adding author details of blog from the user
     const onAddAuthor = event => {
@@ -76,7 +81,7 @@ const Bloglist = () => {
                 description: desc,
                 imageUrl: imgUrl,
             }
-            const newBlogList = [...bloglist, newBlog]
+            const newBlogList = [...blogs, newBlog]
             setBlogs(newBlogList)
             localStorage.setItem('blogs', JSON.stringify(newBlogList))
             setIsVisible(true)
