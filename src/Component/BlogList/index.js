@@ -33,7 +33,7 @@ const Bloglist = () => {
     const [isErr, setIsErr] = useState(false)
     const [isVisible, setIsVisible] = useState(false)
     const [errMsg, setErrMsg] = useState('')
-    const [blogs, setBlogs] = useState(JSON.parse(localStorage.getItem('blogs')))
+    const [blogs, setBlogs] = useState(bloglist)
 
     // adding author details of blog from the user
     const onAddAuthor = event => {
