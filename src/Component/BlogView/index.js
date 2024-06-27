@@ -1,10 +1,10 @@
 // here, importing useParams from react-router-dom for getting id to render blog details
-import {Link, useParams} from 'react-router-dom'
-import {useState} from 'react'
+import {Link, useParams} from 'react-router-dom';
+import {useState} from 'react';
 
 // here, importing reactjs-popup to update blog details provide by the user
 import Popup from 'reactjs-popup';
-import './index.css'
+import './index.css';
 
 const BlogView = props => {
     const {id} = useParams()

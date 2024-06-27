@@ -1,5 +1,5 @@
-import {Link} from 'react-router-dom'
-import './index.css'
+import {Link} from 'react-router-dom';
+import './index.css';
 
 // here, link imported from react-router-dom for navigation
 
