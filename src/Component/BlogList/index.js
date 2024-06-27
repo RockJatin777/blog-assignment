@@ -70,7 +70,7 @@ const Bloglist = () => {
             setIsErr(true)
             setErrMsg("Please provide all details to add new blog")
         } else {
-            const id = blogs.length + 1
+            const id = blogs.length*2
             const summary = desc.slice(0,90)
             const newBlog = {
                 id,

@@ -59,7 +59,7 @@ const BlogView = props => {
             const newBlogList = blogList.filter(eachBlog => eachBlog.id !== parseInt(id))
             const summary = newDesc.slice(0, 90)
             const newBlog = {
-                id,
+                id: parseInt(id),
                 title: newTitle,
                 author: newAuthor,
                 date: new Date().toDateString(),
@@ -67,7 +67,9 @@ const BlogView = props => {
                 description: newDesc,
                 imageUrl: newImgUrl,
             }
+            
             const updatedBlogList = [...newBlogList, newBlog]
+            console.log(updatedBlogList)
             localStorage.setItem('blogs', JSON.stringify(updatedBlogList))
         }
     }
