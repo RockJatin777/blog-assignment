@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+}
+
+.blog-view-container {
+    display: flex;
+    gap: 36px;
+    font-family: Roboto;
+    color: #5c278d;
+    background-image: linear-gradient(aqua, aquamarine);
+    padding: 24px;
+    min-height: 90vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-view-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.blog-view-image {
+    width: 50%;
+    height: 350px;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-view-image {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    figcaption {
+        width: 60%;
+    }
+}
+
+.blog-view-container h1 {
+    margin-bottom: 24px;
+}
+
+.blog-view-author {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.blog-view-author span {
+    font-weight: 700;
+}
+
+.btn {
+    margin-right: 20px;
+    color: #5c278d;
+    border: 1px solid #5c278d;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: transparent;
+    margin-top: 16px;
+}
+
+.popup-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 36px;
+    padding-bottom: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+.popup-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.user-input {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #838383;
+    border-radius: 6px;
+    padding: 10px;
+    color: #838383;
+    margin-bottom: 10px;
+}
+
+.err-msg {
+    color: red;
+    font-size: 14px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.trigger-button {
+    border: none;
+    color: red;
+    margin-right: 10px;
+    background: none;
+}
+
+.create-button {
+    background-color: #7E22CE;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px;
+    border: none;
+}
+
+.blog-view-link {
+    text-decoration: none;
+    color: #ffffff;
+}

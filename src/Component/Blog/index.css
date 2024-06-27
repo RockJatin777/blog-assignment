@@ -1,0 +1,35 @@
+.link {
+    text-decoration: none;
+}
+
+.blog-container {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 24px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    margin: 24px;
+    color: darkblue;
+    background-color: aliceblue;
+}
+
+.blog-image {
+    height: 200px;
+    width: 350px;
+    border-radius: 12px;
+}
+
+.blog-container h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.author {
+    text-align: right;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.author span {
+    font-weight: 700;
+}

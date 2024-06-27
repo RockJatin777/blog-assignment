@@ -1,0 +1,129 @@
+article {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.header-container {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.header p {
+    color: #e15d04;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header button {
+    background-color: #0040ff;
+    color: #ffffff;
+    border: none;
+    height: 24px;
+    width: 70px;
+    border-radius: 6px;
+}
+
+.blog-welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-welcome-container h1 {
+    font-size: 46px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.blog-welcome-container p {
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.blog-btn {
+    background-color: #0040ff;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    height: 36px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.popup-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 36px;
+    padding-bottom: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+}
+
+.popup-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.user-input {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #838383;
+    border-radius: 6px;
+    padding: 10px;
+    color: #838383;
+    margin-bottom: 10px;
+}
+
+.err-msg {
+    color: red;
+    font-size: 14px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.trigger-button {
+    border: none;
+    color: red;
+    margin-right: 10px;
+    background: none;
+}
+
+.create-button {
+    background-color: #7E22CE;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px;
+    border: none;
+    color: #ffffff;
+}
+
+.bloglist-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(aqua, aquamarine);
+}
