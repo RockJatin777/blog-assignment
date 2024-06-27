@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 // here, we import some react hook component for maintain state in functional component
 import { CiCirclePlus } from "react-icons/ci";
 // importing icon for better design from react icons
@@ -22,9 +22,7 @@ const bloglist = [
 
 const Bloglist = () => {
     // here, sample details stored in local storage for persisting after first render
-    useEffect(() => {
-        localStorage.setItem('blogs', JSON.stringify(bloglist))
-    }, [])
+    localStorage.setItem('blogs', JSON.stringify(bloglist))
 
     // here, we use useState for maintaining state for user inputs
 
