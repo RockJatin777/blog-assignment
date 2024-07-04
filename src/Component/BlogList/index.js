@@ -91,6 +91,7 @@ const Bloglist = () => {
             setErrMsg('')
             setIsErr(false)
             setIsVisible(false)
+            window.location.reload()
         }
     }
 
